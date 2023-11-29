@@ -134,11 +134,15 @@ h6 {
   font-family: GrtskPeta-Bold;
 }
 .articles-topic__link {
-	color: #000;
-
+  color: #000;
   font-weight: 500;
   line-height: 222.222%;
   letter-spacing: -0.36px;
+  text-decoration-line: underline;
+  transition: all 0.3s ease 0s;
+}
+.articles-topic__link:hover {
+  color: #828b8d;
   text-decoration-line: underline;
 }
 .articles-topic__link:not(:last-child) {
