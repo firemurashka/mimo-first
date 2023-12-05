@@ -1,3 +1,27 @@
+/*ЦВЕТА----------------------------------*/
+/*
+1. желтый
+background-color: #e6d787;
+
+2. голубой
+background-color: #06bcb3;
+
+3. темно-голубой
+background-color: #048280;
+
+4. коричневый
+background-color: #a47f62;
+
+5. лиловый
+background-color: #b1abd4;
+
+6. иссине-зеленый
+background-color: #304c5a;
+
+*/
+
+/*ЦВЕТА----------------------------------*/
+
 /*ОБНУЛЕНИЕ----------------------------------*/
 * {
   padding: 0;
@@ -107,69 +131,30 @@ h6 {
 }
 /*----ШРИФТЫ-------------------------------------*/
 
-/*page for blog----------------------------------*/
-.articles-topic {
-  margin: 0px 0px 50px 0px;
-}
-.articles-topic__body {
-  background: var(--f-2-f-2-f-2, #f2f2f2);
-  display: flex;
-  justify-content: space-between;
+/*----КНОПКИ-------------------------------------*/
+
+.button {
+  border-radius: 4px;
+  color: #fff;
+  display: inline-flex;
   align-items: center;
-  padding: 30px 0px;
-}
-.articles-topic__image {
-  padding: 0px 0px 0px 88px;
-}
-.articles-topic__content {
-  display: flex;
-  flex-direction: column;
-  flex: 0 1 1052px;
-}
-.articles-topic__title {
-  margin: 0px 0px 13px 0px;
-  font-weight: 700;
-  line-height: 183.333%;
-  letter-spacing: -0.36px;
-  font-family: GrtskPeta-Bold;
-}
-.articles-topic__link {
-  color: #000;
-  font-weight: 500;
-  line-height: 222.222%;
-  letter-spacing: -0.36px;
-  text-decoration-line: underline;
-  transition: all 0.3s ease 0s;
-}
-.articles-topic__link:hover {
-  color: #828b8d;
-  text-decoration-line: underline;
-}
-.articles-topic__link:not(:last-child) {
-  margin: 0px 0px 4px 0px;
+  justify-content: center;
+  text-align: center;
+  font-size: 14px;
+  padding: 8px 16px;
+  margin: 20px auto;
+  text-decoration: none;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+  transition: background-color 0.2s linear;
+  background-color: #06bcb3;
+  cursor: pointer;
 }
 
-.text-block {
-  margin: 0px 0px 50px 0px;
-}
-.text-block_01 {
-  margin: 50px 0px 50px 0px;
+.button:hover {
+  background-color: #048280;
 }
 
-.text-block_05 {
-  padding-bottom: 100px;
+.button:active {
+  background-color: #304c5a;
 }
-.text-block__container {
-  display: flex;
-  justify-content: flex-end;
-}
-.text-block p {
-  max-width: 1052px;
-  padding: 0px 154px 0px 0px;
-}
-.text-block p:not(:last-child) {
-  margin: 0px 0px 25px 0px;
-}
-.image-block {
-  margin: 0px 0px 50px 0px;
-}
+/*----КНОПКИ-------------------------------------*/

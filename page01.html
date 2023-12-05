@@ -1,0 +1,95 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+    <head>
+        <!-- Заголовок страницы в браузере -->
+        <title>PAge 1</title>
+        <!-- Подключаем CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style-dinamic.css">
+        <!-- Кодировка страницы -->
+        <meta charset="UTF-8">
+        <!-- Адаптив -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,900&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    </head>
+    <!-- Отображаемое тело страницы -->
+    <body>
+        <div class="wrapper">
+            <!-- тело шапки - БЭМ блок-->
+            <header class="header">
+                <!-- ограничивающий контейнер БЭМ элемент и технический класс -->
+                <div class="header__container _container"></div>
+            </header>
+            <main class="page">
+                <div class="block-id">
+                    <div class="block-id__container _container">
+                        <div class="block-id__body">
+                            <div class="block-id__content">
+                                <h2 class="block-id__title">Заголовок</h2>
+                                <p id="text">Yes text</p>
+                                <p>Secret Message</p>
+                                <button class="block-id__button button" onclick="show()">Show secret</button>
+                                <p id="secret">*****************</p>
+                            </div>
+                            <div class="block-id__content">
+                                <h2 class="">Список</h2>
+                                <ul class="block-id__list">
+                                    <li class="block-id__item">Michael</li>
+                                    <li class="block-id__item">Jonas</li>
+                                    <li class="block-id__item">Ellen</li>
+                                    <li class="block-id__item">Ellen</li>
+                                    <li class="block-id__item">Ellen</li>
+                                    <li class="block-id__item">Ellen</li>
+                                </ul>
+                                <button class="block-id__button button" onclick="displayItemDiv()">Show length</button>
+                                <div class="block-id__div"></div>
+                                <button class="block-id__button button" onclick="displayItemP()">Show Item</button>
+                                <p class="block-id__p"></p>
+                            </div>
+                            <div class="block-id__content">
+                                <h2 class="">Список #2</h2>
+                                <ul class="block-id__list">
+                                    <li class="urgent">buy milk</li>
+                                    <li class="urgent">call grandma</li>
+                                    <li class="urgent important">call grandma</li>
+                                    <li class="urgent important">call grandma</li>
+                                    <li class="urgent important">call grandma</li>
+                                    <li class="urgent important">call grandma</li>
+                                </ul>
+                                <button class="block-id__button button" onclick="displayClass()">Show urgent tasks</button>
+                                <p class="block-id__urgent"></p>
+                                <button class="block-id__button button" onclick="displayClasses()">Show urgent tasks</button>
+                                <p class="block-id__urgent-important"></p>
+                            </div>
+                            <div class="block-id__content">
+                                <h2 class="">Замена цвета setAttribute</h2>
+                                <button class="block-id__button button" onclick="turnBold()">Turn bold</button>
+                                <button class="block-id__button button" onclick="turnItalic()">Turn Italic</button>
+                                <p id="turn" class="italic">It was a brighr cold day in April, and the clocks were striking thirteen</p>
+                            </div>
+                            <div class="block-id__content">
+                                <h2 class="">Замена цвета classList</h2>
+                                <button class="block-id__button button" onclick="addBold()" title="add">Добавление Bold</button>
+                                <button class="block-id__button button" onclick="removeBold()" title="remove">Удаление класса Bold</button>
+										  <br>
+                                <button class="block-id__button button" onclick="toggleBold()" title="toggle">Удаление и добавление класса Bold</button>
+                                <button class="block-id__button button" onclick="addclasses()" title="toggle">Добавление нескольких классов</button>
+                                <p id="add" class="italic">It was a brighr cold day in April, and the clocks were striking thirteen</p>
+                            </div>
+                            <div class="block-id__content">
+                                <h2 class="">Замена атрибута src</h2>
+                                <button class="block-id__button button" onclick="show()" title="add">Нажми чтобы увидеть новый продукт</button>
+										  <br>
+                                <img id="dessert" src="img/page/dessert01.jpeg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="footer"></footer>
+        </div>
+        <script src=" js/script.js"></script>
+    </body>
+</html>
